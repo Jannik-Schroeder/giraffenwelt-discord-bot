@@ -24,4 +24,4 @@ client.once("ready", async () => {
     // Ready here!
 });
 
-client.start(process.env.token!);
+client.start(process.env.TOKEN!);
