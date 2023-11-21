@@ -8,7 +8,7 @@ COPY . .
 RUN npm install
 RUN npm run build
 
-ENV TOKEN
-ENV DATABASE_URL
+ENV TOKEN=
+ENV DATABASE_URL=
 
 CMD ["npm", "run", "start"]
