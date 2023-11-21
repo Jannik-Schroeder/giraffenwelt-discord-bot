@@ -8,11 +8,11 @@ import { commandType } from "../types/Interactions";
 import dotenv from 'dotenv';
 dotenv.config()
 
-const clientId: string = Buffer.from(process.env.token!.split(".")[0], "base64").toString("utf8"); // Gets the client ID from first part of token
+const clientId: string = Buffer.from(process.env.TOKEN!.split(".")[0], "base64").toString("utf8"); // Gets the client ID from first part of token
 
 const commands: Array<object> = [];
 
-const rest = new REST({ version: "10" }).setToken(process.env.token!);
+const rest = new REST({ version: "10" }).setToken(process.env.TOKEN!);
 
 export default async () => {
     console.log("Starting registerSlash module");
